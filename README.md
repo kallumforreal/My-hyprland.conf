@@ -2,7 +2,7 @@
 My version of CrypticCreators Hyprland Config
 
 
-## Prerequisites
+# Prerequisites
 kservice
 <br>
 hypridle
@@ -27,4 +27,12 @@ zen browser
 <br>
 vesktop
 
+# Installing prerequisites on Arch
+Pacman:
+<br>
+sudo pacman -S kitty dolphin fuzzel gedit
 
+
+yay:
+<br>
+yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop
