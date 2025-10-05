@@ -15,3 +15,5 @@ fuzzel
 gedit
 zen browser
 vesktop
+
+
