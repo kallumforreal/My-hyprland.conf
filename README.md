@@ -6,6 +6,7 @@ My version of CrypticCreators Hyprland Config
 kservice
 hypridle
 hyprlock
+<br>
 hyprpicker
 hyprshot
 kwallet
