@@ -44,6 +44,7 @@ yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin ve
 <br>
 Ctrl, alt, delete = exit
 <br>
+<br>
 //Program Binds
 <br>
 Super, Q = Terminal
@@ -60,6 +61,7 @@ Super, N = New txt in Documents
 <br>
 Super Shift, N = filemanager Documents
 <br>
+<br>
 //Window Control Binds
 <br>
 Alt, f4 = killactive
@@ -74,9 +76,11 @@ Shift alt, space = toggle floating
 <br>
 Super, J = toggle split
 <br>
+<br>
 //Screenshot
 <br>
 print = hyprshot region
+<br>
 <br>
 //Workspace Controls
 <br>
@@ -129,6 +133,7 @@ SUPER, right, movefocus, r
 SUPER, up, movefocus, u
 <br>
 SUPER, down, movefocus, d
+<br>
 <br>
 //Media Controls
 <br>
