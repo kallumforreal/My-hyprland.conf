@@ -44,6 +44,8 @@ hypr, fastfetch, fuzzel - ~/.config
 <br>
 .p10k.zsh, .zshrc - /home/youruser
 <br>
+.p10k.zsh and .zshrc do not come with a . in the front, add one
+<br>
 # Keybinds
 //Session Binds
 <br>
