@@ -42,7 +42,7 @@ yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin ve
 # Folder/File Locations
 hypr, fastfetch, fuzzel - ~/.config
 <br>
-.p10k.zsh, .zshrc - /home/<youruser>
+.p10k.zsh, .zshrc - /home/youruser
 <br>
 # Keybinds
 //Session Binds
