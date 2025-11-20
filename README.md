@@ -19,8 +19,6 @@ kitty
 <br>
 dolphin
 <br>
-fuzzel
-<br>
 gedit
 <br>
 zen browser
@@ -36,7 +34,7 @@ lollypop
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent lollypop quickshell
+sudo pacman -S kitty dolphin gedit hyprpolkitagent lollypop quickshell
 
 
 yay:
