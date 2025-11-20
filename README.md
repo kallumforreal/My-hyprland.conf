@@ -28,16 +28,20 @@ gedit
 zen browser
 <br>
 vesktop
+<br>
+noctalia-shell-git
+<br>
+lollypop
 
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent
+sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent lollypop
 
 
 yay:
 <br>
-yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop
+yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop noctalia-shell-git
 <br>
 # Folder/File Locations
 hypr, fastfetch, fuzzel - ~/.config
