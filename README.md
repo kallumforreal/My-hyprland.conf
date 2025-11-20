@@ -9,11 +9,9 @@ kservice
 <br>
 hypridle
 <br>
-hyprlock
-<br>
 hyprpicker
 <br>
-hyprshot
+hyprquickshot
 <br>
 kwallet
 <br>
@@ -31,17 +29,23 @@ vesktop
 <br>
 noctalia-shell-git
 <br>
+quickshell
+<br>
 lollypop
 
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent lollypop
+sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent lollypop quickshell
 
 
 yay:
 <br>
 yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop noctalia-shell-git
+<br>
+hyprquickshot:
+<br>
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 <br>
 # Folder/File Locations
 hypr, fastfetch, fuzzel - ~/.config
