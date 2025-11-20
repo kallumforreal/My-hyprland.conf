@@ -42,7 +42,8 @@ sudo pacman -S kitty dolphin fuzzel gedit hyprpolkitagent lollypop quickshell
 yay:
 <br>
 yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop noctalia-shell-git
-<br>
+
+
 hyprquickshot:
 <br>
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
