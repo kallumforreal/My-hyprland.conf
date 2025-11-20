@@ -30,11 +30,13 @@ noctalia-shell-git
 quickshell
 <br>
 lollypop
+<br>
+steam
 
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -S kitty dolphin gedit hyprpolkitagent lollypop quickshell
+sudo pacman -S kitty dolphin gedit hyprpolkitagent lollypop quickshell steam
 
 
 yay:
