@@ -1,5 +1,4 @@
-# My-hyprland.conf
-My version of CrypticCreators Hyprland Config
+
 
 
 # Prerequisites
@@ -32,22 +31,44 @@ quickshell
 lollypop
 <br>
 steam
+<br>
+hypremoji
+<br>
+zplug/zsh
+<br>
+cava
+<br>
+cmatrix
+<br>
+tty-clock
+<br>
+playerctl
+<br>
+fastfetch
+<br>
+matugen
 
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -S kitty dolphin gedit hyprpolkitagent lollypop quickshell steam
+sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 
 
 yay:
 <br>
-yay -S kservice hypridle hyprlock hyprpicker hyprshot kwallet zen-browser-bin vesktop noctalia-shell-git
+yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
 
 
 hyprquickshot:
 <br>
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+
+
+zplug/zsh
 <br>
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+
+
 # Folder/File Locations
 hypr, fastfetch, fuzzel - ~/.config
 <br>
