@@ -84,6 +84,23 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+Sorry, nothing here yet.
+</details>
 
 
 
