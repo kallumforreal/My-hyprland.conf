@@ -76,50 +76,20 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 # Installation
-Manual:
-<style>
-  .dropdown {
-    width: 100%;
-    max-width: 500px;
-    margin: 10px 0;
-  }
+<details>
+  <summary><strong>Manual</strong></summary>
 
-  .dropdown-toggle {
-    background: #eee;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-weight: bold;
-  }
+<br>
 
-  .dropdown-content {
-    display: none;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 6px 6px;
-    background: #fafafa;
-  }
-</style>
+**Clone the Repository:**
 
-<div class="dropdown">
-  <div class="dropdown-toggle" onclick="this.nextElementSibling.style.display =
-    this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
-    Manual
-  </div>
-
-  <div class="dropdown-content">
-    <p><strong>Clone the Repository:</strong></p>
-    <pre><code>git clone https://github.com/kallumforreal/kallumhyprland.conf</code></pre>
-
-    <p><strong>Folder/File Locations</strong></p>
-    <p><code>hypr & fastfetch</code> → <code>~/.config</code></p>
-    <p><code>.p10k.zsh, .zshrc</code> → <code>/home/{YOURUSER}</code></p>
-  </div>
-</div>
+```bash
+git clone https://github.com/kallumforreal/kallumhyprland.conf
+```
+Folder/File Locations
+hypr & fastfetch → ~/.config
+.p10k.zsh, .zshrc → /home/{YOURUSER}
+</details>
 
 
 
