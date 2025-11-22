@@ -52,22 +52,26 @@ This is my Hyprland config!
 # Installing prerequisites on Arch
 Pacman:
 <br>
-`sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen`
+<kbd>sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen</kbd>
 
 
 yay:
 <br>
-`yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock`
+<kbd>yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock</kbd>
 
 
 hyprquickshot:
 <br>
-`git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot`
+<kbd>git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot</kbd>
 
 
 zplug/zsh
 <br>
-`curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh`
+<kbd>curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh</kbd>
+
+
+# Installation (Manual)
+
 
 
 # Folder/File Locations
