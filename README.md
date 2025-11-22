@@ -4,7 +4,7 @@ This is my Hyprland config!
 
 # Prerequisites
 
-- Packages
+- ## Packages
     - [hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
     - [kservice](https://github.com/KDE/kservice)
     - [hypridle](https://github.com/hyprwm/hypridle)
