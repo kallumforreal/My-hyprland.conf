@@ -1,0 +1,29 @@
+[config]
+
+[templates]
+
+[templates.hyprlandappearance]
+input_path = '~/.config/noctalia/Templates/appearance.conf'
+output_path = '~/.config/hypr/default/appearance.conf'
+
+[templates.fastfetch]
+input_path = '~/.config/noctalia/Templates/config.jsonc'
+output_path = '~/.config/fastfetch/config.jsonc'
+
+[templates.p10kzsh]
+input_path = '~/.config/noctalia/Templates/.p10k.zsh'
+output_path = '~/.p10k.zsh'
+
+# User-defined templates
+# Add your custom templates below
+# Example:
+# [templates.myapp]
+# input_path = "~/.config/noctalia/templates/myapp.css"
+# output_path = "~/.config/myapp/theme.css"
+# post_hook = "myapp --reload-theme"
+
+# Remove this section and add your own templates
+#[templates.placeholder]
+#input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/MatugenTemplates/noctalia.json"
+#output_path = "/home/kallum/.cache/noctalia/placeholder.json"
+
