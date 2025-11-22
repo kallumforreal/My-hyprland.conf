@@ -49,31 +49,34 @@ This is my Hyprland config!
 <br>
 [matugen](https://github.com/InioX/matugen)
 
-# Installing prerequisites on Arch
-Pacman:
+# Installing prerequisites
+
+<details>
+  <summary><strong>![Arch Linux Logo](https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg) Arch</strong></summary>
+**Pacman:**
 <br>
 ```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
 
-yay:
+**yay:**
 <br>
 ```md
 yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
 ```
 
-hyprquickshot:
+**hyprquickshot:**
 <br>
 ```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
-zplug/zsh
+**zplug/zsh**
 <br>
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
-
+</details>
 
 # Installation
 <details>
@@ -96,7 +99,7 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 
 # Keybinds
-//Session Binds
+**Session Binds**
 <br>
 bind = CTRL ALT, Delete, exit,
 <br>
