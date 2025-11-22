@@ -83,14 +83,29 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 </details>
 
 
+
+
+
+
+
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
 Sorry, nothing here yet.
 </details>
 
 
+
+
+
+
+
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
 
 </details>
+
+
+
+
+
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
@@ -133,6 +148,7 @@ OR
 https://zen-browser.app/download/
 
 **Vesktop**
+<br>
 Download the AppImage from https://github.com/Vencord/Vesktop/releases/latest, make it executable (chmod +x Vesktop.AppImage), and run it.
 <br>
 OR
@@ -164,14 +180,29 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 </details>
 
 
+
+
+
+
+
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> NixOS</strong></summary>
 Sorry, nothing here yet.
 </details>
 
 
+
+
+
+
+
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
 Sorry, nothing here yet.
 </details>
+
+
+
+
+
 
 
 **DISCLAIMER**
