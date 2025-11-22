@@ -483,149 +483,88 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 **Program Binds**
 <br>
-bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
-<br>
-bind = SUPER, R, exec, $menu
-<br>
-bind = SUPER, E, exec, $fileManager /home/kallum
-<br>
-bind = SUPER SHIFT, E, exec, $fileManager /home/kallum/.config/
-<br>
-bind = SUPER, B, exec, $browser
-<br>
-bind = SUPER SHIFT, C, exec, $colorPicker
-<br>
-bind = SUPER, N, exec, /home/kallum/.config/hypr/scripts/gedit.sh
-<br>
-bind = SUPER SHIFT, N, exec, $fileManager /home/kallum/Documents/
-<br>
-bind = SUPER, G, exec, $gameLauncher
-<br>
-bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
-<br>
+- bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
+- bind = SUPER, R, exec, $menu
+- bind = SUPER, E, exec, $fileManager /home/kallum
+- bind = SUPER SHIFT, E, exec, $fileManager /home/kallum/.config/
+- bind = SUPER, B, exec, $browser
+- bind = SUPER SHIFT, C, exec, $colorPicker
+- bind = SUPER, N, exec, /home/kallum/.config/hypr/scripts/gedit.sh
+- bind = SUPER SHIFT, N, exec, $fileManager /home/kallum/Documents/
+- bind = SUPER, G, exec, $gameLauncher
+- bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 
 
 **notifications**
 <br>
-bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
-<br>
-bind = SUPER, Z, exec, qs -c noctalia-shell ipc call notifications clear
-<br>
-bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleDND
-<br>
-<br>
+- bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
+- bind = SUPER, Z, exec, qs -c noctalia-shell ipc call notifications clear
+- bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleDND
 
 
 **Sick open fastfetch, cava, cmatrix, and tty-clock**
 <br>
-bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
-<br>
-<br>
+- bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 
 
 **Screenshots**
 <br>
-bind = , print, exec, quickshell -c hyprquickshot -n
-<br>
-<br>
+- bind = , print, exec, quickshell -c hyprquickshot -n
 
 
 **Media Controls**
 <br>
-bind = SUPER, M, exec, lollypop
-<br>
-bind = SUPER SHIFT, M, exec, qs -c noctalia-shell ipc call media playPause
-<br>
-bind = SUPER SHIFT, Comma, exec, playerctl previous
-<br>
-bind = SUPER SHIFT, Period, exec, playerctl next
-<br>
-bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
-<br>
-bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
-<br>
-<br>
+- bind = SUPER, M, exec, lollypop
+- bind = SUPER SHIFT, M, exec, qs -c noctalia-shell ipc call media playPause
+- bind = SUPER SHIFT, Comma, exec, playerctl previous
+- bind = SUPER SHIFT, Period, exec, playerctl next
+- bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+- bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
 
 **Mute and Deafen**
 <br>
-bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
-<br>
-bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle && sink_mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk "{print \$2}"); if [ "$sink_mute" = "yes" ]; then notify-send "Deafen" "You are now Deafened"; else notify-send "Undeafened" "You are now Undeafened"; fi'
-<br>
-<br>
+- bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
+- bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle && sink_mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk "{print \$2}"); if [ "$sink_mute" = "yes" ]; then notify-send "Deafen" "You are now Deafened"; else notify-send "Undeafened" "You are now Undeafened"; fi'
 
 
 **Workspace Controls**
 <br>
-bind = SUPER, 1, exec, $moveWorkspace 1
-<br>
-bind = SUPER, 2, exec, $moveWorkspace 2
-<br>
-bind = SUPER, 3, exec, $moveWorkspace 3
-<br>
-bind = SUPER, 4, exec, $moveWorkspace 4
-<br>
-bind = SUPER, 5, exec, $moveWorkspace 5
-<br>
-bind = SUPER, 6, exec, $moveWorkspace 6
-<br>
-bind = SUPER, 7, exec, $moveWorkspace 7
-<br>
-bind = SUPER, 8, exec, $moveWorkspace 8
-<br>
-bind = SUPER, 9, exec, $moveWorkspace 9
-<br>
-bind = SUPER, 0, exec, $moveWorkspace 10
-<br>
-bind = SUPER SHIFT, 1, movetoworkspacesilent, 1
-<br>
-bind = SUPER SHIFT, 2, movetoworkspacesilent, 2
-<br>
-bind = SUPER SHIFT, 3, movetoworkspacesilent, 3
-<br>
-bind = SUPER SHIFT, 4, movetoworkspacesilent, 4
-<br>
-bind = SUPER SHIFT, 5, movetoworkspacesilent, 5
-<br>
-bind = SUPER SHIFT, 6, movetoworkspacesilent, 6
-<br>
-bind = SUPER SHIFT, 7, movetoworkspacesilent, 7
-<br>
-bind = SUPER SHIFT, 8, movetoworkspacesilent, 8
-<br>
-bind = SUPER SHIFT, 9, movetoworkspacesilent, 9
-<br>
-bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
-<br>
-bind = SUPER, V, togglespecialworkspace,vesktopSpace
-<br>
-bind = SUPER, left, movefocus, l
-<br>
-bind = SUPER, right, movefocus, r
-<br>
-bind = SUPER, up, movefocus, u
-<br>
-bind = SUPER, down, movefocus, d
+- bind = SUPER, 1, exec, $moveWorkspace 1
+- bind = SUPER, 2, exec, $moveWorkspace 2
+- bind = SUPER, 3, exec, $moveWorkspace 3
+- bind = SUPER, 4, exec, $moveWorkspace 4
+- bind = SUPER, 5, exec, $moveWorkspace 5
+- bind = SUPER, 6, exec, $moveWorkspace 6
+- bind = SUPER, 7, exec, $moveWorkspace 7
+- bind = SUPER, 8, exec, $moveWorkspace 8
+- bind = SUPER, 9, exec, $moveWorkspace 9
+- bind = SUPER, 0, exec, $moveWorkspace 10
+- bind = SUPER SHIFT, 1, movetoworkspacesilent, 1
+- bind = SUPER SHIFT, 2, movetoworkspacesilent, 2
+- bind = SUPER SHIFT, 3, movetoworkspacesilent, 3
+- bind = SUPER SHIFT, 4, movetoworkspacesilent, 4
+- bind = SUPER SHIFT, 5, movetoworkspacesilent, 5
+- bind = SUPER SHIFT, 6, movetoworkspacesilent, 6
+- bind = SUPER SHIFT, 7, movetoworkspacesilent, 7
+- bind = SUPER SHIFT, 8, movetoworkspacesilent, 8
+- bind = SUPER SHIFT, 9, movetoworkspacesilent, 9
+- bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
+- bind = SUPER, V, togglespecialworkspace,vesktopSpace
+- bind = SUPER, left, movefocus, l
+- bind = SUPER, right, movefocus, r
+- bind = SUPER, up, movefocus, u
+- bind = SUPER, down, movefocus, d
 
 
 
 **Window Control Binds**
 <br>
-bind = ALT, F4, killactive
-<br>
-bind = SUPER, C, killactive
-<br>
-bind = SUPER SHIFT, D, exec, $toggleDesktop; qs -c noctalia-shell ipc call bar toggle
-<br>
-bind = SUPER, f, fullscreen
-<br>
-bind = SUPER SHIFT, f, fullscreenstate, 0 3
-<br>
-bind = SHIFT ALT, Space, togglefloating,
-<br>
-bind = SUPER, J, togglesplit, # dwindle
-<br>
-bindm = SUPER, mouse:272, movewindow
-<br>
-bindm = SUPER, mouse:273, resizewindow
+- bind = SUPER, C, killactive
+- bind = SUPER SHIFT, D, exec, $toggleDesktop; qs -c noctalia-shell ipc call bar toggle
+- bind = SUPER, f, fullscreen
+- bind = SUPER SHIFT, f, fullscreenstate, 0 3
+- bind = SHIFT ALT, Space, togglefloating,
+- bind = SUPER, J, togglesplit, # dwindle
+- bindm = SUPER, mouse:272, movewindow
+- bindm = SUPER, mouse:273, resizewindow
