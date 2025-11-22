@@ -173,7 +173,6 @@ git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypre
 
 - **hyprquickshot:**
   
-<br>
 ```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
@@ -181,7 +180,6 @@ git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquic
 
 - **zplug/zsh**
   
-<br>
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
