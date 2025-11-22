@@ -52,7 +52,7 @@ This is my Hyprland config!
 # Installing prerequisites on Arch
 Pacman:
 <br>
-```md
+```bash
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
 
@@ -64,7 +64,7 @@ yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop no
 
 hyprquickshot:
 <br>
-```md
+```bash
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
