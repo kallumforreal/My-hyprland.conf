@@ -89,7 +89,73 @@ Sorry, nothing here yet.
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
-Sorry, nothing here yet.
+
+**xbps**
+```md
+sudo xbps-install -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop steam cmatrix cava playerctl fastfetch kservice kwallet tty-clock
+```
+
+**quickshell**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install via `sudo xbps-install -Sy meson ninja` first if needed).
+
+**hypridle**
+```md
+git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
+```
+
+**hyprpicker**
+```md
+git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
+```
+
+**matugen**
+Cargo:
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `xbps-install -Sy rust cargo` first if needed).
+
+**Zen-Browser**
+Flathub
+```md
+flatpak install flathub app.zen_browser.zen
+```
+OR
+<br>
+https://zen-browser.app/download/
+
+**Vesktop**
+Download the AppImage from https://github.com/Vencord/Vesktop/releases/latest, make it executable (chmod +x Vesktop.AppImage), and run it.
+<br>
+OR
+<br>
+flatpak install flathub dev.vencord.Vesktop
+
+**Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+**hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
+**hyprquickshot:**
+<br>
+```md
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+```
+
+**zplug/zsh**
+<br>
+```md
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
 </details>
 
 
@@ -106,6 +172,10 @@ Sorry, nothing here yet.
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
 Sorry, nothing here yet.
 </details>
+
+
+**DISCLAIMER**
+I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
 
 
 
