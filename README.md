@@ -476,11 +476,9 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 **Session Binds**
 <br>
 - bind = CTRL ALT, Delete, exit,
-<br>
 - bind = SUPER, L, exec, qs -c noctalia-shell ipc call lockScreen lock
-<br>
 - bind = SUPER, CTRL ALT, exec, systemctl --user start hyprpolkitagent
-<br>
+
 
 
 **Program Binds**
