@@ -56,26 +56,30 @@ This is my Hyprland config!
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+
   
-**Pacman:**
+**- Pacman:**
 <br>
 ```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
 
-**yay:**
+
+**- yay:**
 <br>
 ```md
 yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
 ```
 
-**hyprquickshot:**
+
+**- hyprquickshot:**
 <br>
 ```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
-**zplug/zsh**
+
+**- zplug/zsh**
 <br>
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
@@ -90,10 +94,12 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
 
+
 **apt**
 ```md
 sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
 ```
+
 
 **hyprpolkitagent**
 ```md
@@ -101,16 +107,19 @@ git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpo
 ```
 (requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
 
+
 **quickshell**
 ```md
 git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
 ```
 (requires meson, ninja; install as above).
 
+
 **hypridle**
 ```md
 git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
 ```
+
 
 **hyprpicker**
 ```md
