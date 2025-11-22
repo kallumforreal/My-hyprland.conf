@@ -52,7 +52,15 @@ This is my Hyprland config!
 # Installing prerequisites
 
 <details>
-  <summary><strong><img  src="https://cdn.simpleicons.org/archlinux/white" Arch</strong></summary>
+  <summary><strong><h4>
+     <sub>
+          <img  src="https://cdn.simpleicons.org/archlinux/white"
+           height="20"
+           width="20">
+     </sub>
+     Arch
+     <a href="https://aur.archlinux.org/packages/matugen-bin"><img alt="AUR Version" src="https://img.shields.io/aur/version/matugen-bin?color=brightgreen&label=" align="right"></a>
+</h4> Arch</strong></summary>
 **Pacman:**
 <br>
 
