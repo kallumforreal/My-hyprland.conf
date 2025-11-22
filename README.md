@@ -90,6 +90,11 @@ Sorry, nothing here yet.
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
 
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
+
 **xbps**
 ```md
 sudo xbps-install -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop steam cmatrix cava playerctl fastfetch kservice kwallet tty-clock
@@ -156,11 +161,6 @@ git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquic
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
-</details>
-
-
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
-Sorry, nothing here yet.
 </details>
 
 
