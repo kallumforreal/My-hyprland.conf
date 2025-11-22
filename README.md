@@ -101,6 +101,10 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 </details>
 
 
+**Automatic**
+`Coming someday`
+
+
 
 # Keybinds
 **Session Binds**
