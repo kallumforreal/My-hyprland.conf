@@ -52,15 +52,14 @@ This is my Hyprland config!
 # Installing prerequisites
 
 
-<h4>
+<details><summary><strong><h4>
      <sub>
           <img  src="https://cdn.simpleicons.org/archlinux/white"
            height="20"
            width="20">
      </sub>
      Arch
-</h4>
-<details><summary><strong>Click to Expand</strong></summary>
+</h4></strong></summary>
   
 **Pacman:**
 <br>
