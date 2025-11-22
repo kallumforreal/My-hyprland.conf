@@ -55,6 +55,9 @@ This is my Hyprland config!
 # Installing prerequisites
 
 
+**DISCLAIMER**
+I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
+
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
 
   
@@ -439,11 +442,6 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 
-
-
-
-**DISCLAIMER**
-I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
 
 
 
