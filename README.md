@@ -58,28 +58,28 @@ This is my Hyprland config!
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
 
   
-**- Pacman:**
+- **Pacman:**
 <br>
 ```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
 
 
-**- yay:**
+- **yay:**
 <br>
 ```md
 yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
 ```
 
 
-**- hyprquickshot:**
+- **hyprquickshot:**
 <br>
 ```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
 
-**- zplug/zsh**
+- **zplug/zsh**
 <br>
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
@@ -95,208 +95,76 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
 
 
-**apt**
+- **apt**
 ```md
 sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
 ```
 
 
-**hyprpolkitagent**
+- **hyprpolkitagent**
 ```md
 git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpolkitagent && meson setup build && ninja -C build install
 ```
 (requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
 
 
-**quickshell**
+- **quickshell**
 ```md
 git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
 ```
 (requires meson, ninja; install as above).
 
 
-**hypridle**
+- **hypridle**
 ```md
 git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
 ```
 
 
-**hyprpicker**
+- **hyprpicker**
 ```md
 git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
 ```
 (requires cmake; install via `sudo apt install cmake`).
 
-**matugen**
+- **matugen**
 ```md
 cargo install matugen
 ```
 (Cargo is a Rust installer; install via sudo `sudo apt install cargo` first if needed).
 
-**Zen-browser**
+- **Zen-browser**
 ```md
 wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.deb -O zen.deb && sudo dpkg -i zen.deb
 ```
 (or use Flatpak: `flatpak install flathub io.zen.Zen`).
 
-**Vesktop**
+- **Vesktop**
 ```md
 wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.deb -O vesktop.deb && sudo dpkg -i vesktop.deb
 ```
 (or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`).
 
-**Noctalia**
+- **Noctalia**
 ```md
 git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
 ```
 (requires quickshell installed; follow the repo's README for setup).
 
-**hypremoji**
+- **hypremoji**
 ```md
 git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
 ```
 
-</details>
 
-
-
-
-
-
-
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
-
-**apt**
-```md
-sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
-```
-
-**hyprpolkitagent**
-```md
-git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpolkitagent && meson setup build && ninja -C build install
-```
-(requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
-
-**quickshell**
-```md
-git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
-```
-(requires meson, ninja; install as above).
-
-**hypridle**
-```md
-git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
-```
-
-**hyprpicker**
-```md
-git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
-```
-(requires cmake; install via `sudo apt install cmake`).
-
-**matugen**
-```md
-cargo install matugen
-```
-(Cargo is a Rust installer; install via sudo `sudo apt install cargo` first if needed).
-
-**Zen-browser**
-```md
-wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.deb -O zen.deb && sudo dpkg -i zen.deb
-```
-(or use Flatpak: `flatpak install flathub io.zen.Zen`).
-
-**Vesktop**
-```md
-wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.deb -O vesktop.deb && sudo dpkg -i vesktop.deb
-```
-(or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`).
-
-**Noctalia**
-```md
-git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
-```
-(requires quickshell installed; follow the repo's README for setup).
-
-**hypremoji**
-```md
-git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
-```
-
-</details>
-
-
-
-
-
-
-
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
-
-**xbps**
-```md
-sudo xbps-install -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop steam cmatrix cava playerctl fastfetch kservice kwallet tty-clock
-```
-
-**quickshell**
-```md
-git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
-```
-(requires meson, ninja; install via `sudo xbps-install -Sy meson ninja` first if needed).
-
-**hypridle**
-```md
-git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
-```
-
-**hyprpicker**
-```md
-git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
-```
-
-**matugen**
-```md
-cargo install matugen
-```
-(Cargo is a Rust installer; install via sudo `xbps-install -Sy rust cargo` first if needed).
-
-**Zen-Browser**
-Flathub
-```md
-flatpak install flathub app.zen_browser.zen
-```
-OR
-<br>
-https://zen-browser.app/download/
-
-**Vesktop**
-<br>
-Download the AppImage from https://github.com/Vencord/Vesktop/releases/latest, make it executable (chmod +x Vesktop.AppImage), and run it.
-<br>
-OR
-<br>
-```md
-flatpak install flathub dev.vencord.Vesktop
-```
-
-**Noctalia**
-```md
-git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
-```
-(requires quickshell installed; follow the repo's README for setup).
-
-**hypremoji**
-```md
-git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
-```
-
-**hyprquickshot:**
+- **hyprquickshot:**
 <br>
 ```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
-**zplug/zsh**
+
+- **zplug/zsh**
 <br>
 ```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
@@ -309,11 +177,172 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
+
+- **apt**
+```md
+sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
+```
+
+- **hyprpolkitagent**
+```md
+git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpolkitagent && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
+
+- **quickshell**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install as above).
+
+- **hypridle**
+```md
+git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
+```
+
+- **hyprpicker**
+```md
+git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
+```
+(requires cmake; install via `sudo apt install cmake`).
+
+- **matugen**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `sudo apt install cargo` first if needed).
+
+- **Zen-browser**
+```md
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.deb -O zen.deb && sudo dpkg -i zen.deb
+```
+(or use Flatpak: `flatpak install flathub io.zen.Zen`).
+
+- **Vesktop**
+```md
+wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.deb -O vesktop.deb && sudo dpkg -i vesktop.deb
+```
+(or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`).
+
+- **Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+- **hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
+- **hyprquickshot:**
+<br>
+```md
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+```
+
+
+- **zplug/zsh**
+<br>
+```md
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
+
+</details>
+
+
+
+
+
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
+
+- **xbps**
+```md
+sudo xbps-install -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop steam cmatrix cava playerctl fastfetch kservice kwallet tty-clock
+```
+
+- **quickshell**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install via `sudo xbps-install -Sy meson ninja` first if needed).
+
+- **hypridle**
+```md
+git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
+```
+
+- **hyprpicker**
+```md
+git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
+```
+
+- **matugen**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `xbps-install -Sy rust cargo` first if needed).
+
+- **Zen-Browser**
+Flathub
+```md
+flatpak install flathub app.zen_browser.zen
+```
+OR
+<br>
+https://zen-browser.app/download/
+
+- **Vesktop**
+<br>
+Download the AppImage from https://github.com/Vencord/Vesktop/releases/latest, make it executable (chmod +x Vesktop.AppImage), and run it.
+<br>
+OR
+<br>
+```md
+flatpak install flathub dev.vencord.Vesktop
+```
+
+- **Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+- **hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
+- **hyprquickshot:**
+<br>
+```md
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+```
+
+- **zplug/zsh**
+<br>
+```md
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
+
+
+
+</details>
+
+
+
+
+
+
+
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
 
-**dnf**
+- **dnf**
 ```md
 sudo dnf copr enable errornointernet/quickshell
 ```
@@ -323,33 +352,46 @@ sudo dnf copr enable errornointernet/quickshell
 sudo dnf install -y kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch kf6-kservice hypridle hyprpicker kf6-kwallet tty-clock
 ```
 
-**matugen**
+- **matugen**
 ```md
 cargo install matugen
 ```
 (Cargo is a Rust installer; install via sudo `sudo dnf install cargo` first if needed).
 
-**Zen-Browser**
+- **Zen-Browser**
 ```md
 wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.rpm -O zen.rpm && sudo dnf install ./zen.rpm
 ```
 (or use Flatpak: `flatpak install flathub io.zen.Zen`)
 
-**Vesktop**
+- **Vesktop**
 ```md
 wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.rpm -O vesktop.rpm && sudo dnf install ./vesktop.rpm
 ```
 (or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`)
 
-**Noctalia**
+- **Noctalia**
 ```md
 git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
 ```
 (requires quickshell installed; follow the repo's README for setup).
 
-**hypremoji**
+- **hypremoji**
 ```md
 git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
+- **hyprquickshot:**
+<br>
+```md
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+```
+
+
+- **zplug/zsh**
+<br>
+```md
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 
 </details>
@@ -372,12 +414,12 @@ I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I a
 
 <br>
 
-**Clone the Repository:**
+- **Clone the Repository:**
 
 ```bash
 git clone https://github.com/kallumforreal/kallumhyprland.conf
 ```
-**Folder/File Locations:**
+- **Folder/File Locations:**
 <br>
 `hypr & fastfetch → ~/.config`
 <br>
@@ -387,12 +429,12 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 **Automatic**
 <br>
-`Coming someday`
+- `Coming someday`
 
 
 
 # Keybinds
-**Session Binds**
+- **Session Binds**
 <br>
 bind = CTRL ALT, Delete, exit,
 <br>
@@ -403,7 +445,7 @@ bind = SUPER, CTRL ALT, exec, systemctl --user start hyprpolkitagent
 <br>
 
 
-**Program Binds**
+- **Program Binds**
 <br>
 bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
 <br>
@@ -427,7 +469,7 @@ bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 <br>
 
 
-**notifications**
+- **notifications**
 <br>
 bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
 <br>
@@ -438,21 +480,21 @@ bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleD
 <br>
 
 
-**Sick open fastfetch, cava, cmatrix, and tty-clock**
+- **Sick open fastfetch, cava, cmatrix, and tty-clock**
 <br>
 bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 <br>
 <br>
 
 
-**Screenshots**
+- **Screenshots**
 <br>
 bind = , print, exec, quickshell -c hyprquickshot -n
 <br>
 <br>
 
 
-**Media Controls**
+- **Media Controls**
 <br>
 bind = SUPER, M, exec, lollypop
 <br>
@@ -469,7 +511,7 @@ bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 <br>
 
 
-**Mute and Deafen**
+- **Mute and Deafen**
 <br>
 bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
 <br>
@@ -478,7 +520,7 @@ bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl
 <br>
 
 
-**Workspace Controls**
+- **Workspace Controls**
 <br>
 bind = SUPER, 1, exec, $moveWorkspace 1
 <br>
@@ -532,7 +574,7 @@ bind = SUPER, down, movefocus, d
 
 
 
-**Window Control Binds**
+- **Window Control Binds**
 <br>
 bind = ALT, F4, killactive
 <br>
