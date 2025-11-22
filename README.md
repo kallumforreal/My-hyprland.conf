@@ -3,6 +3,10 @@ This is my Hyprland config!
 
 
 # Prerequisites
+<br>
+**Packages**
+
+
 [hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
 <br>
 [kservice](https://github.com/KDE/kservice)
@@ -48,6 +52,7 @@ This is my Hyprland config!
 [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 <br>
 [matugen](https://github.com/InioX/matugen)
+
 
 
 **Installing prerequisites**
