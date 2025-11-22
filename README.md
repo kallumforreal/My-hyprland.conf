@@ -59,8 +59,7 @@ This is my Hyprland config!
            width="20">
      </sub>
      Arch
-     <a href="https://aur.archlinux.org/packages/matugen-bin"><img alt="AUR Version" src="https://img.shields.io/aur/version/matugen-bin?color=brightgreen&label=" align="right"></a>
-</h4> Arch</strong></summary>
+</h4></strong></summary>
 **Pacman:**
 <br>
 
