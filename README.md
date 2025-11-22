@@ -83,22 +83,27 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 </details>
 
 
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
 Sorry, nothing here yet.
 </details>
 
 
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
 Sorry, nothing here yet.
 </details>
 
 
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
 Sorry, nothing here yet.
 </details>
 
 
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> NixOS</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
 Sorry, nothing here yet.
 </details>
 
