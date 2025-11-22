@@ -51,18 +51,19 @@ This is my Hyprland config!
 
 # Installing prerequisites
 
-<details>
-  <summary><strong><h4>
+
+<h4>
      <sub>
           <img  src="https://cdn.simpleicons.org/archlinux/white"
            height="20"
            width="20">
      </sub>
      Arch
-</h4></strong></summary>
+</h4>
+<details><summary><strong>Click to Expand</strong></summary>
+  
 **Pacman:**
 <br>
-
 ```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
