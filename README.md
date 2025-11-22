@@ -3,7 +3,7 @@ This is my Hyprland config!
 
 
 # Prerequisites
-
+A list of all "required" packages for the Hyprland Config
 - ## Packages
     - [hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
     - [kservice](https://github.com/KDE/kservice)
@@ -35,9 +35,10 @@ This is my Hyprland config!
 
 
 
-- DISCLAIMER
+**DISCLAIMER**
 <br>
 I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
+
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
 
