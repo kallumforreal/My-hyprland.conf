@@ -1,83 +1,142 @@
-
+# kallumhyprland.conf
+This is my Hyprland config!
 
 
 # Prerequisites
-hyprpolkitagent
-<br>
-kservice
-<br>
-hypridle
-<br>
-hyprpicker
-<br>
-hyprquickshot
-<br>
-kwallet
-<br>
-kitty
-<br>
-dolphin
-<br>
-gedit
-<br>
-zen browser
-<br>
-vesktop
-<br>
-noctalia-shell-git
-<br>
-quickshell
-<br>
-lollypop
-<br>
-steam
-<br>
-hypremoji
-<br>
-zplug/zsh
-<br>
-cava
-<br>
-cmatrix
-<br>
-tty-clock
-<br>
-playerctl
-<br>
-fastfetch
-<br>
-matugen
 
-# Installing prerequisites on Arch
-Pacman:
+[hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
 <br>
+[kservice](https://github.com/KDE/kservice)
+<br>
+[hypridle](https://github.com/hyprwm/hypridle)
+<br>
+[hyprpicker](https://github.com/hyprwm/hyprpicker)
+<br>
+[hyprquickshot](https://github.com/jamdon2/hyprquickshot)
+<br>
+[kwallet](https://apps.kde.org/kwalletmanager5/)
+<br>
+[kitty](https://github.com/kovidgoyal/kitty)
+<br>
+[dolphin](https://apps.kde.org/dolphin/)
+<br>
+[gedit](https://gedit-text-editor.org/)
+<br>
+[zen browser](https://zen-browser.app/)
+<br>
+[vesktop](https://github.com/Vencord/Vesktop)
+<br>
+[noctalia-shell-git](https://github.com/noctalia-dev/noctalia-shell?tab=readme-ov-file)
+<br>
+[quickshell](https://github.com/quickshell-mirror/quickshell)
+<br>
+[lollypop](https://gitlab.gnome.org/World/lollypop)
+<br>
+[steam](https://store.steampowered.com/about/)
+<br>
+[hypremoji](https://github.com/Musagy/hypremoji)
+<br>
+[zplug/zsh](https://github.com/zplug/zplug)
+<br>
+[cava](https://github.com/karlstav/cava)
+<br>
+[cmatrix](https://github.com/abishekvashok/cmatrix)
+<br>
+[tty-clock](https://github.com/xorg62/tty-clock)
+<br>
+[playerctl](https://github.com/altdesktop/playerctl)
+<br>
+[fastfetch](https://github.com/fastfetch-cli/fastfetch)
+<br>
+[matugen](https://github.com/InioX/matugen)
+
+
+
+# Installing prerequisites
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+  
+**Pacman:**
+<br>
+```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
+```
 
-
-yay:
+**yay:**
 <br>
+```md
 yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
+```
 
-
-hyprquickshot:
+**hyprquickshot:**
 <br>
+```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+```
 
-
-zplug/zsh
+**zplug/zsh**
 <br>
+```md
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
+</details>
 
 
-# Folder/File Locations
-hypr, fastfetch, fuzzel - ~/.config
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> NixOS</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
+Sorry, nothing here yet.
+</details>
+
+
+
+
+# Installation
+<details>
+  <summary><strong>Manual</strong></summary>
+
 <br>
-.p10k.zsh, .zshrc - /home/youruser
+
+**Clone the Repository:**
+
+```bash
+git clone https://github.com/kallumforreal/kallumhyprland.conf
+```
+**Folder/File Locations:**
 <br>
-.p10k.zsh and .zshrc do not come with a . in the front, add one
+`hypr & fastfetch → ~/.config`
 <br>
+`.p10k.zsh, .zshrc → /home/{YOURUSER}`
+</details>
+
+
+**Automatic**
+<br>
+`Coming someday`
+
+
+
 # Keybinds
-//Session Binds
+**Session Binds**
 <br>
 bind = CTRL ALT, Delete, exit,
 <br>
@@ -86,7 +145,9 @@ bind = SUPER, L, exec, qs -c noctalia-shell ipc call lockScreen lock
 bind = SUPER, CTRL ALT, exec, systemctl --user start hyprpolkitagent
 <br>
 <br>
-//Program Binds
+
+
+**Program Binds**
 <br>
 bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
 <br>
@@ -108,8 +169,9 @@ bind = SUPER, G, exec, $gameLauncher
 <br>
 bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 <br>
-<br>
-//notifications
+
+
+**notifications**
 <br>
 bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
 <br>
@@ -118,17 +180,23 @@ bind = SUPER, Z, exec, qs -c noctalia-shell ipc call notifications clear
 bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleDND
 <br>
 <br>
-//Sick open fastfetch, cava, cmatrix, and tty-clock
+
+
+**Sick open fastfetch, cava, cmatrix, and tty-clock**
 <br>
 bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 <br>
 <br>
-//Screenshots
+
+
+**Screenshots**
 <br>
 bind = , print, exec, quickshell -c hyprquickshot -n
 <br>
 <br>
-//Media Controls
+
+
+**Media Controls**
 <br>
 bind = SUPER, M, exec, lollypop
 <br>
@@ -143,14 +211,18 @@ bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@
 bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 <br>
 <br>
-//Mute and Deafen
+
+
+**Mute and Deafen**
 <br>
 bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
 <br>
 bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle && sink_mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk "{print \$2}"); if [ "$sink_mute" = "yes" ]; then notify-send "Deafen" "You are now Deafened"; else notify-send "Undeafened" "You are now Undeafened"; fi'
 <br>
 <br>
-//Workspace Controls
+
+
+**Workspace Controls**
 <br>
 bind = SUPER, 1, exec, $moveWorkspace 1
 <br>
@@ -201,9 +273,10 @@ bind = SUPER, right, movefocus, r
 bind = SUPER, up, movefocus, u
 <br>
 bind = SUPER, down, movefocus, d
-<br>
-<br>
-//Window Control Binds
+
+
+
+**Window Control Binds**
 <br>
 bind = ALT, F4, killactive
 <br>
