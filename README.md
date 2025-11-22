@@ -35,7 +35,7 @@ This is my Hyprland config!
 
 
 
-### DISCLAIMER
+- DISCLAIMER
 <br>
 I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
 
