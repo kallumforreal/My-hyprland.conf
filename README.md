@@ -4,55 +4,34 @@ This is my Hyprland config!
 
 # Prerequisites
 
-[hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
-<br>
-[kservice](https://github.com/KDE/kservice)
-<br>
-[hypridle](https://github.com/hyprwm/hypridle)
-<br>
-[hyprpicker](https://github.com/hyprwm/hyprpicker)
-<br>
-[hyprquickshot](https://github.com/jamdon2/hyprquickshot)
-<br>
-[kwallet](https://apps.kde.org/kwalletmanager5/)
-<br>
-[kitty](https://github.com/kovidgoyal/kitty)
-<br>
-[dolphin](https://apps.kde.org/dolphin/)
-<br>
-[gedit](https://gedit-text-editor.org/)
-<br>
-[zen browser](https://zen-browser.app/)
-<br>
-[vesktop](https://github.com/Vencord/Vesktop)
-<br>
-[noctalia-shell-git](https://github.com/noctalia-dev/noctalia-shell?tab=readme-ov-file)
-<br>
-[quickshell](https://github.com/quickshell-mirror/quickshell)
-<br>
-[lollypop](https://gitlab.gnome.org/World/lollypop)
-<br>
-[steam](https://store.steampowered.com/about/)
-<br>
-[hypremoji](https://github.com/Musagy/hypremoji)
-<br>
-[zplug/zsh](https://github.com/zplug/zplug)
-<br>
-[cava](https://github.com/karlstav/cava)
-<br>
-[cmatrix](https://github.com/abishekvashok/cmatrix)
-<br>
-[tty-clock](https://github.com/xorg62/tty-clock)
-<br>
-[playerctl](https://github.com/altdesktop/playerctl)
-<br>
-[fastfetch](https://github.com/fastfetch-cli/fastfetch)
-<br>
-[matugen](https://github.com/InioX/matugen)
+- Packages
+    - [hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
+    - [kservice](https://github.com/KDE/kservice)
+    - [hypridle](https://github.com/hyprwm/hypridle)
+    - [hyprpicker](https://github.com/hyprwm/hyprpicker)
+    - [hyprquickshot](https://github.com/jamdon2/hyprquickshot)
+    - [kwallet](https://apps.kde.org/kwalletmanager5/)
+    - [kitty](https://github.com/kovidgoyal/kitty)
+    - [dolphin](https://apps.kde.org/dolphin/)
+    - [gedit](https://gedit-text-editor.org/)
+    - [zen browser](https://zen-browser.app/)
+    - [vesktop](https://github.com/Vencord/Vesktop)
+    - [noctalia-shell-git](https://github.com/noctalia-dev/noctalia-shell?tab=readme-ov-file)
+    - [quickshell](https://github.com/quickshell-mirror/quickshell)
+    - [lollypop](https://gitlab.gnome.org/World/lollypop)
+    - [steam](https://store.steampowered.com/about/)
+    - [hypremoji](https://github.com/Musagy/hypremoji)
+    - [zplug/zsh](https://github.com/zplug/zplug)
+    - [cava](https://github.com/karlstav/cava)
+    - [cmatrix](https://github.com/abishekvashok/cmatrix)
+    - [tty-clock](https://github.com/xorg62/tty-clock)
+    - [playerctl](https://github.com/altdesktop/playerctl)
+    - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+    - [matugen](https://github.com/InioX/matugen)
 
 
 
-# Installing prerequisites
+## Installing prerequisites
 
 
 
@@ -457,7 +436,7 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 
 
-### Program Binds
+## Program Binds
   - bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
   - bind = SUPER, R, exec, $menu
   - bind = SUPER, E, exec, $fileManager /home/kallum
@@ -470,21 +449,21 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
   - bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 
 
-### notifications
+## notifications
   - bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
   - bind = SUPER, Z, exec, qs -c noctalia-shell ipc call notifications clear
   - bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleDND
 
 
-### Sick open fastfetch, cava, cmatrix, and tty-clock
+## Sick open fastfetch, cava, cmatrix, and tty-clock
   - bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 
 
-### Screenshot
+## Screenshot
   - bind = , print, exec, quickshell -c hyprquickshot -n
 
 
-### Media Controls
+## Media Controls
   - bind = SUPER, M, exec, lollypop
   - bind = SUPER SHIFT, M, exec, qs -c noctalia-shell ipc call media playPause
   - bind = SUPER SHIFT, Comma, exec, playerctl previous
@@ -493,12 +472,12 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
   - bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
 
-### Mute and Deafen
+## Mute and Deafen
   - bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
   - bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle && sink_mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk "{print \$2}"); if [ "$sink_mute" = "yes" ]; then notify-send "Deafen" "You are now Deafened"; else notify-send "Undeafened" "You are now Undeafened"; fi'
 
 
-### Workspace Controls
+## Workspace Controls
   - bind = SUPER, 1, exec, $moveWorkspace 1
   - bind = SUPER, 2, exec, $moveWorkspace 2
   - bind = SUPER, 3, exec, $moveWorkspace 3
@@ -527,7 +506,7 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 
 
-### Window Control Binds
+## Window Control Binds
   - bind = SUPER, C, killactive
   - bind = SUPER SHIFT, D, exec, $toggleDesktop; qs -c noctalia-shell ipc call bar toggle
   - bind = SUPER, f, fullscreen
