@@ -49,10 +49,11 @@ This is my Hyprland config!
 <br>
 [matugen](https://github.com/InioX/matugen)
 
-# Installing prerequisites
+
+**Installing prerequisites**
 
 
-<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub>Arch</strong></summary>
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
   
 **Pacman:**
 <br>
