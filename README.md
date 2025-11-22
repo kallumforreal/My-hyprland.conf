@@ -1,5 +1,5 @@
 # kallumhyprland.conf
-
+This is my Hyprland config!
 
 
 # Prerequisites
@@ -74,7 +74,9 @@ zplug/zsh
 `hypr & fastfetch` - `~/.config`
 <br>
 `.p10k.zsh, .zshrc` - `/home/{YOURUSER}`
-<br>
+
+
+
 # Keybinds
 //Session Binds
 <br>
@@ -85,6 +87,8 @@ bind = SUPER, L, exec, qs -c noctalia-shell ipc call lockScreen lock
 bind = SUPER, CTRL ALT, exec, systemctl --user start hyprpolkitagent
 <br>
 <br>
+
+
 //Program Binds
 <br>
 bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
@@ -108,6 +112,8 @@ bind = SUPER, G, exec, $gameLauncher
 bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 <br>
 <br>
+
+
 //notifications
 <br>
 bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
@@ -117,16 +123,22 @@ bind = SUPER, Z, exec, qs -c noctalia-shell ipc call notifications clear
 bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleDND
 <br>
 <br>
+
+
 //Sick open fastfetch, cava, cmatrix, and tty-clock
 <br>
 bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 <br>
 <br>
+
+
 //Screenshots
 <br>
 bind = , print, exec, quickshell -c hyprquickshot -n
 <br>
 <br>
+
+
 //Media Controls
 <br>
 bind = SUPER, M, exec, lollypop
@@ -142,6 +154,8 @@ bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@
 bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 <br>
 <br>
+
+
 //Mute and Deafen
 <br>
 bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
@@ -149,6 +163,8 @@ bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pa
 bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle && sink_mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk "{print \$2}"); if [ "$sink_mute" = "yes" ]; then notify-send "Deafen" "You are now Deafened"; else notify-send "Undeafened" "You are now Undeafened"; fi'
 <br>
 <br>
+
+
 //Workspace Controls
 <br>
 bind = SUPER, 1, exec, $moveWorkspace 1
@@ -200,8 +216,9 @@ bind = SUPER, right, movefocus, r
 bind = SUPER, up, movefocus, u
 <br>
 bind = SUPER, down, movefocus, d
-<br>
-<br>
+
+
+
 //Window Control Binds
 <br>
 bind = ALT, F4, killactive
