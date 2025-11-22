@@ -458,7 +458,6 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 git clone https://github.com/kallumforreal/kallumhyprland.conf
 ```
 - **Folder/File Locations:**
-<br>
 `hypr & fastfetch → ~/.config`
 <br>
 `.p10k.zsh, .zshrc → /home/{YOURUSER}`
