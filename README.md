@@ -3,9 +3,6 @@ This is my Hyprland config!
 
 
 # Prerequisites
-<br>
-**Packages**
-
 
 [hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
 <br>
@@ -55,7 +52,7 @@ This is my Hyprland config!
 
 
 
-**Installing prerequisites**
+# Installing prerequisites
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/archlinux/white" height="20" width="20"></sub> Arch Linux</strong></summary>
