@@ -52,7 +52,7 @@ This is my Hyprland config!
 # Installing prerequisites
 
 <details>
-  <summary><strong>![Arch Linux Logo]([https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg](https://camo.githubusercontent.com/837a9d06b92e4307dc07cff4ecf51d315536e09c9f61ddec0cec81beaa70faa6/68747470733a2f2f63646e2e73696d706c6569636f6e732e6f72672f617263686c696e75782f7768697465)) Arch</strong></summary>
+  <summary><strong><img  src="https://cdn.simpleicons.org/archlinux/white" Arch</strong></summary>
 **Pacman:**
 <br>
 
