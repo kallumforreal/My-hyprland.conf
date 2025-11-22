@@ -52,7 +52,7 @@ This is my Hyprland config!
 # Installing prerequisites on Arch
 Pacman:
 <br>
-```bash
+```md
 sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
 ```
 
@@ -64,7 +64,7 @@ yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop no
 
 hyprquickshot:
 <br>
-```bash
+```md
 git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 ```
 
@@ -75,17 +75,51 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 ```
 
 
-# Installation (Manual)
-Clone the Repository:
-```md
-git clone https://github.com/kallumforreal/kallumhyprland.conf
-```
+# Installation
+Manual:
+<style>
+  .dropdown {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+  }
 
+  .dropdown-toggle {
+    background: #eee;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-weight: bold;
+  }
 
-# Folder/File Locations
-`hypr & fastfetch` - `~/.config`
-<br>
-`.p10k.zsh, .zshrc` - `/home/{YOURUSER}`
+  .dropdown-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background: #fafafa;
+  }
+</style>
+
+<div class="dropdown">
+  <div class="dropdown-toggle" onclick="this.nextElementSibling.style.display =
+    this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+    Manual
+  </div>
+
+  <div class="dropdown-content">
+    <p><strong>Clone the Repository:</strong></p>
+    <pre><code>git clone https://github.com/kallumforreal/kallumhyprland.conf</code></pre>
+
+    <p><strong>Folder/File Locations</strong></p>
+    <p><code>hypr & fastfetch</code> → <code>~/.config</code></p>
+    <p><code>.p10k.zsh, .zshrc</code> → <code>/home/{YOURUSER}</code></p>
+  </div>
+</div>
 
 
 
