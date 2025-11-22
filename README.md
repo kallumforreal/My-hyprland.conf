@@ -3,79 +3,77 @@
 
 
 # Prerequisites
-hyprpolkitagent
+[hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent)
 <br>
-kservice
+[kservice](https://github.com/KDE/kservice)
 <br>
-hypridle
+[hypridle](https://github.com/hyprwm/hypridle)
 <br>
-hyprpicker
+[hyprpicker](https://github.com/hyprwm/hyprpicker)
 <br>
-hyprquickshot
+[hyprquickshot](https://github.com/jamdon2/hyprquickshot)
 <br>
-kwallet
+[kwallet](https://apps.kde.org/kwalletmanager5/)
 <br>
-kitty
+[kitty](https://github.com/kovidgoyal/kitty)
 <br>
-dolphin
+[dolphin](https://apps.kde.org/dolphin/)
 <br>
-gedit
+[gedit](https://gedit-text-editor.org/)
 <br>
-zen browser
+[zen browser](https://zen-browser.app/)
 <br>
-vesktop
+[vesktop](https://github.com/Vencord/Vesktop)
 <br>
 [noctalia-shell-git](https://github.com/noctalia-dev/noctalia-shell?tab=readme-ov-file)
 <br>
-quickshell
+[quickshell](https://github.com/quickshell-mirror/quickshell)
 <br>
-lollypop
+[lollypop](https://gitlab.gnome.org/World/lollypop)
 <br>
-steam
+[steam](https://store.steampowered.com/about/)
 <br>
-hypremoji
+[hypremoji](https://github.com/Musagy/hypremoji)
 <br>
-zplug/zsh
+[zplug/zsh](https://github.com/zplug/zplug)
 <br>
-cava
+[cava](https://github.com/karlstav/cava)
 <br>
-cmatrix
+[cmatrix](https://github.com/abishekvashok/cmatrix)
 <br>
-tty-clock
+[tty-clock](https://github.com/xorg62/tty-clock)
 <br>
-playerctl
+[playerctl](https://github.com/altdesktop/playerctl)
 <br>
-fastfetch
+[fastfetch](https://github.com/fastfetch-cli/fastfetch)
 <br>
-matugen
+[matugen](https://github.com/InioX/matugen)
 
 # Installing prerequisites on Arch
 Pacman:
 <br>
-sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen
+`sudo pacman -Sy --needed kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch matugen`
 
 
 yay:
 <br>
-yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock
+`yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock`
 
 
 hyprquickshot:
 <br>
-git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+`git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot`
 
 
 zplug/zsh
 <br>
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+`curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh`
 
 
 # Folder/File Locations
-hypr, fastfetch, fuzzel - ~/.config
+`hypr & fastfetch` - `~/.config`
 <br>
-.p10k.zsh, .zshrc - /home/youruser
-<br>
-.p10k.zsh and .zshrc do not come with a . in the front, add one
+`.p10k.zsh, .zshrc` - `/home/{YOURUSER}`
 <br>
 # Keybinds
 //Session Binds
