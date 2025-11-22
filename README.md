@@ -107,7 +107,7 @@ bind = SUPER, CTRL ALT, exec, systemctl --user start hyprpolkitagent
 <br>
 
 
-//Program Binds
+**Program Binds**
 <br>
 bind = SUPER, Q, exec, $terminal zsh -c "fastfetch; exec zsh"
 <br>
@@ -129,10 +129,9 @@ bind = SUPER, G, exec, $gameLauncher
 <br>
 bind = SUPER SHIFT, S, exec, qs -c noctalia-shell ipc call settings toggle
 <br>
-<br>
 
 
-//notifications
+**notifications**
 <br>
 bind = SUPER SHIFT, ALT_L, exec, qs -c noctalia-shell ipc call notifications toggleHistory
 <br>
@@ -143,21 +142,21 @@ bind = SUPER SHIFT, Z, exec, qs -c noctalia-shell ipc call notifications toggleD
 <br>
 
 
-//Sick open fastfetch, cava, cmatrix, and tty-clock
+**Sick open fastfetch, cava, cmatrix, and tty-clock**
 <br>
 bind = SUPER, T, exec, ~/.config/hypr/scripts/sickass-terminal-open.sh
 <br>
 <br>
 
 
-//Screenshots
+**Screenshots**
 <br>
 bind = , print, exec, quickshell -c hyprquickshot -n
 <br>
 <br>
 
 
-//Media Controls
+**Media Controls**
 <br>
 bind = SUPER, M, exec, lollypop
 <br>
@@ -174,7 +173,7 @@ bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 <br>
 
 
-//Mute and Deafen
+**Mute and Deafen**
 <br>
 bind = ,ALT_R,exec,sh -c 'pactl set-source-mute @DEFAULT_SOURCE@ toggle && if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q "yes"; then notify-send "Muted" "Microphone is now muted"; else notify-send "Unmuted" "Microphone is now unmuted"; fi'
 <br>
@@ -183,7 +182,7 @@ bind = ,CONTROL_R,exec,sh -c 'pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl
 <br>
 
 
-//Workspace Controls
+**Workspace Controls**
 <br>
 bind = SUPER, 1, exec, $moveWorkspace 1
 <br>
@@ -237,7 +236,7 @@ bind = SUPER, down, movefocus, d
 
 
 
-//Window Control Binds
+**Window Control Binds**
 <br>
 bind = ALT, F4, killactive
 <br>
