@@ -1,3 +1,4 @@
+# kallumhyprland.conf
 
 
 
@@ -24,7 +25,7 @@ zen browser
 <br>
 vesktop
 <br>
-noctalia-shell-git
+[noctalia-shell-git](https://github.com/noctalia-dev/noctalia-shell?tab=readme-ov-file)
 <br>
 quickshell
 <br>
