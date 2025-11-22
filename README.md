@@ -89,7 +89,64 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Linux Mint</strong></summary>
-Sorry, nothing here yet.
+
+**apt**
+```md
+sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
+```
+
+**hyprpolkitagent**
+```md
+git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpolkitagent && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
+
+**quickshell**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install as above).
+
+**hypridle**
+```md
+git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
+```
+
+**hyprpicker**
+```md
+git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
+```
+(requires cmake; install via `sudo apt install cmake`).
+
+**matugen**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `sudo apt install cargo` first if needed).
+
+**Zen-browser**
+```md
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.deb -O zen.deb && sudo dpkg -i zen.deb
+```
+(or use Flatpak: `flatpak install flathub io.zen.Zen`).
+
+**Vesktop**
+```md
+wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.deb -O vesktop.deb && sudo dpkg -i vesktop.deb
+```
+(or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`).
+
+**Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+**hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
 </details>
 
 
@@ -99,6 +156,63 @@ Sorry, nothing here yet.
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
+
+**apt**
+```md
+sudo apt update && sudo apt install -y kitty dolphin gedit lollypop steam cmatrix cava playerctl fastfetch libkf5service-bin kwalletmanager tty-clock
+```
+
+**hyprpolkitagent**
+```md
+git clone https://github.com/hyprland-community/hyprpolkitagent.git && cd hyprpolkitagent && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install via `sudo apt install meson ninja-build` first if needed).
+
+**quickshell**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja; install as above).
+
+**hypridle**
+```md
+git clone https://github.com/hyprland-community/hypridle && cd hypridle && make all && sudo make install
+```
+
+**hyprpicker**
+```md
+git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && cmake -DCMAKE_INSTALL_PREFIX=/usr -S . && make && sudo make install
+```
+(requires cmake; install via `sudo apt install cmake`).
+
+**matugen**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `sudo apt install cargo` first if needed).
+
+**Zen-browser**
+```md
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.deb -O zen.deb && sudo dpkg -i zen.deb
+```
+(or use Flatpak: `flatpak install flathub io.zen.Zen`).
+
+**Vesktop**
+```md
+wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.deb -O vesktop.deb && sudo dpkg -i vesktop.deb
+```
+(or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`).
+
+**Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+**hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
 
 </details>
 
@@ -132,7 +246,6 @@ git clone https://github.com/hyprland-community/hyprpicker && cd hyprpicker && c
 ```
 
 **matugen**
-Cargo:
 ```md
 cargo install matugen
 ```
@@ -153,7 +266,9 @@ Download the AppImage from https://github.com/Vencord/Vesktop/releases/latest, m
 <br>
 OR
 <br>
+```md
 flatpak install flathub dev.vencord.Vesktop
+```
 
 **Noctalia**
 ```md
@@ -186,7 +301,61 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/nixos/white" height="20" width="20"></sub> NixOS</strong></summary>
-Sorry, nothing here yet.
+
+**Config File**
+<br>
+For imperative installation (add to your configuration.nix for declarative setup):
+```md
+nix-env -iA nixpkgs.kitty nixpkgs.dolphin nixpkgs.gedit nixpkgs.lollypop nixpkgs.steam nixpkgs.cmatrix nixpkgs.cava nixpkgs.playerctl nixpkgs.fastfetch nixpkgs.kservice nixpkgs.hypridle nixpkgs.hyprpicker nixpkgs.kwallet nixpkgs.vesktop nixpkgs.tty-clock nixpkgs.hyprpolkitagent
+```
+
+**quickshell**
+**Github:**
+```md
+git clone https://git.sr.ht/~novakane/quickshell && cd quickshell && meson setup build && ninja -C build install
+```
+(requires meson, ninja: `nix-env -iA nixpkgs.meson nixpkgs.ninja`)
+<br>
+OR
+<br>
+**config file:**
+```md
+nix-env -iA unstable.quickshell
+```
+Enable unstable if needed:
+```md
+unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+```
+
+**matugen**
+**Config File:**
+```md
+nix-env -iA nixpkgs.matugen
+```
+OR
+<br>
+**Cargo**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via Config File by adding `nix-env -iA nixpkgs.cargo` first if needed).
+
+**Zen-browser**
+```md
+flatpak install flathub io.zen.Zen
+```
+
+**Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell; follow README for installation process).
+
+**hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
 </details>
 
 
@@ -196,7 +365,46 @@ Sorry, nothing here yet.
 
 
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/fedora/white" height="20" width="20"></sub> Fedora</strong></summary>
-Sorry, nothing here yet.
+
+**dnf**
+```md
+sudo dnf copr enable errornointernet/quickshell
+```
+(Enable COPR for quickshell)
+<br>
+```md
+sudo dnf install -y kitty dolphin gedit hyprpolkitagent lollypop quickshell steam cmatrix cava playerctl fastfetch kf6-kservice hypridle hyprpicker kf6-kwallet tty-clock
+```
+
+**matugen**
+```md
+cargo install matugen
+```
+(Cargo is a Rust installer; install via sudo `sudo dnf install cargo` first if needed).
+
+**Zen-Browser**
+```md
+wget https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-amd64.rpm -O zen.rpm && sudo dnf install ./zen.rpm
+```
+(or use Flatpak: `flatpak install flathub io.zen.Zen`)
+
+**Vesktop**
+```md
+wget https://github.com/Vencord/Vesktop/releases/latest/download/vesktop.rpm -O vesktop.rpm && sudo dnf install ./vesktop.rpm
+```
+(or use Flatpak: `flatpak install flathub dev.vencord.Vesktop`)
+
+**Noctalia**
+```md
+git clone https://github.com/noctalia-dev/noctalia-shell.git ~/.config/noctalia-shell
+```
+(requires quickshell installed; follow the repo's README for setup).
+
+**hypremoji**
+```md
+git clone https://github.com/hyprland-community/hypremoji-picker.git && cd hypremoji-picker && make all && sudo make install
+```
+
 </details>
 
 
