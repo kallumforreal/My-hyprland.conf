@@ -82,6 +82,12 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 ```
 </details>
 
+
+<details><summary><strong><sub><img  src="https://cdn.simpleicons.org/linuxmint/white" height="20" width="20"></sub> Arch Linux</strong></summary>
+
+
+
+
 # Installation
 <details>
   <summary><strong>Manual</strong></summary>
@@ -102,6 +108,7 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 
 
 **Automatic**
+<br>
 `Coming someday`
 
 
