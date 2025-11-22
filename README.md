@@ -55,6 +55,7 @@ This is my Hyprland config!
 # Installing prerequisites
 
 
+
 **DISCLAIMER**
 I use Arch Linux, I do not use Mint, Ubuntu, Fedora, Nix, or Void, therefore I am not 100% sure if all of the install commands work for them.
 
@@ -92,10 +93,6 @@ git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquic
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 </details>
-
-
-
-
 
 
 
@@ -190,10 +187,6 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 
-
-
-
-
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/ubuntu/white" height="20" width="20"></sub> Ubuntu</strong></summary>
 
 - **apt**
@@ -281,10 +274,6 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 
-
-
-
-
 <details><summary><strong><sub><img  src="https://cdn.simpleicons.org/voidlinux/white" height="20" width="20"></sub> Void Linux</strong></summary>
 
 - **xbps**
@@ -365,15 +354,7 @@ git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquic
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 
-
-
 </details>
-
-
-
-
-
-
 
 
 
@@ -441,11 +422,6 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 
 
-
-
-
-
-
 # Installation
 <details>
   <summary><strong>Manual</strong></summary>
@@ -465,15 +441,16 @@ git clone https://github.com/kallumforreal/kallumhyprland.conf
 `.p10k.zsh, .zshrc → /home/{YOURUSER}`
 </details>
 
-
-**Automatic**
+<details><summary><strong>Automatic</strong></summary>
+- **Automatic**
 <br>
 - `Coming someday`
+</details>
 
 
 
 # Keybinds
-**Session Binds**
+### Session Binds
 <br>
 - bind = CTRL ALT, Delete, exit,
 - bind = SUPER, L, exec, qs -c noctalia-shell ipc call lockScreen lock
