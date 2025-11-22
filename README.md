@@ -57,8 +57,9 @@ Pacman:
 
 yay:
 <br>
+```md
 <kbd>yay -Sy --needed kservice hypridle hyprpicker kwallet zen-browser-bin vesktop noctalia-shell-git hypremoji tty-clock</kbd>
-
+```
 
 hyprquickshot:
 <br>
